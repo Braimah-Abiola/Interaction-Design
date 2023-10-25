@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  background: white;
+  margin: 0px;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.projectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.projectContainer div {
+  border-top: 1px solid black;
+  width: 100vw;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -2.5vw;
+  background-color: white;
+}
+
+.projectContainer div p {
+  margin: 0px;
+  font-size: 5vw;
+  padding-left: 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
