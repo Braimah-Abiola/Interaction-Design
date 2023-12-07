@@ -2,12 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 1728 * 10);
+}
+
 body {
+  font-size: clamp(16px, 1.6rem, 1.6rem);
+  font-family: "Matter Regular", sans-serif;
+
+  font-style: normal;
+  font-variation-settings: "ital" 0, "wght" 400;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  letter-spacing: -0.03em;
+
   overflow-x: hidden;
   background: white;
   margin: 0px;
 }
 
+[data-hidden] {
+  opacity: 0;
+}
+
+h1 {
+  font-size: 16rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
 
 .container {
   display: flex;
