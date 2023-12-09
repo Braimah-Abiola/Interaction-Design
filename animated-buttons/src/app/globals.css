@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button One Styles */
+.thread-button {
+  background: linear-gradient(180deg, #896efd 0, #6b4afc 100%);
+  height: 44px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #efeff1;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.thread-button:hover {
+  background: linear-gradient(180deg, #6b4afc 0, #563bca 100%);
+}
+
+.thread-button-backdrop {
+  box-shadow: 0 0 4px #e595ff, 0 0 48px rgba(130, 26, 250, 0.5);
+  display: flex;
+  flex-flow: row;
+  place-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: rgba(161, 138, 255, 0.24);
+  border-radius: 12px;
+  margin: 10px auto 24px;
+  width: 204px;
+}
+
+/* Button One Styles */
+
+/* Button Two Styles */
+
+.flow {
+  z-index: 1;
+  transition: all 0.2s;
+  position: relative;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.flow:hover {
+  text-decoration: none;
+  transform: translate(-1px, -1px);
+}
+
+.flow-button {
+  display: block;
+  z-index: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #000;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  position: relative;
+  transform: translate(0);
+  box-shadow: 1px 1px 1rem rgb(26 26 26 / 15%);
+}
+
+.flow-button:hover {
+  text-decoration: none;
+  transform: translate(-1px, -1px);
+}
+
+.flow-button-backdrop {
+  z-index: -2;
+  background: linear-gradient(
+    20deg,
+    rgba(241, 85, 76, 1) 0%,
+    rgba(247, 225, 150, 1) 100%
+  );
+  background-position: 0 0;
+  background-size: cover;
+  border-radius: 4px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0.5rem, 0.5rem);
+  pointer-events: none;
+}
+
+/* Button Two Styles */
