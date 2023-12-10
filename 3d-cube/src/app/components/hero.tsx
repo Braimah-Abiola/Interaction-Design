@@ -37,11 +37,11 @@ const Hero = () => {
           </svg>
         </Link>
         <Link
-          href="https://stacksorted.com/"
+          href="https://studioix.agency"
           className="section-btns right"
           target="_blank"
         >
-          Visit StackSorted
+          Visit Studio IX
           <svg
             width="14px"
             xmlns="http://www.w3.org/2000/svg"
