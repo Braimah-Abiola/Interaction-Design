@@ -32,6 +32,12 @@
 
 ![ezgif com-video-to-gif(2)](https://github.com/Braimah-Abiola/Interaction-Design/assets/53942120/fd3f62e8-0117-474c-9459-19b30c61d149)
 
+
 # text-gradient-opacity
 
+![ezgif com-video-to-gif(3)](https://github.com/Braimah-Abiola/Interaction-Design/assets/53942120/c785e6e0-23b5-45db-aad8-4f33e7010f13)
+
+
 # ultra-preloader
+
+![ezgif com-video-to-gif(4)](https://github.com/Braimah-Abiola/Interaction-Design/assets/53942120/3d1f8d7a-e9b2-4453-9d8c-f6c994a0db2b)
