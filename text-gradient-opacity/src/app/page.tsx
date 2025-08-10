@@ -2,13 +2,13 @@
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React, { useRef, RefObject, useEffect } from "react";
+import React, { useRef, RefObject, useEffect, MutableRefObject } from "react";
 
 const phrase =
   "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.";
 
 export default function Home() {
-  const refs: RefObject<HTMLSpanElement>[] = useRef([]);
+  const refs: MutableRefObject<HTMLSpanElement[]> = useRef([]);
   const container: RefObject<HTMLElement> = useRef(null);
 
   useEffect(() => {
