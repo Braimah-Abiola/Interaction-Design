@@ -18,7 +18,7 @@ const Loader: React.FC<LoaderProps> = ({ timeline }) => {
       const duration = 2; // Set the duration according to your needs
 
       timeline
-        .add(introAnimation(wordGroupsRef))
+        .add(introAnimation(wordGroupsRef)) 
         .add(progressAnimation(progressRef, progressNumberRef), 0)
         .add(collapseWords(loaderRef), `-=${duration}`);
     }
