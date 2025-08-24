@@ -1,19 +1,42 @@
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 
-interface GlowButtonProps {
-  text: string;
+interface FlipButtonProps {
+  text?: string;
+  href?: string;
 }
 
-const GlowButton: React.FC<GlowButtonProps> = ({ text }) => {
+const FlipButton: React.FC<FlipButtonProps> = ({ text = "Stack Sorted.", href }) => {
+  const content = (
+    <>
+      {/* First span - visible by default, rotates out on hover */}
+      <span className="flip-span">
+        <em className="flip-text flip-text-1">
+          {text}
+        </em>
+      </span>
+
+      {/* Second span - hidden by default, rotates in on hover */}
+      <span className="flip-span flip-span-2">
+        <em className="flip-text flip-text-2">
+          {text}
+        </em>
+      </span>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} className="flip-button">
+        {content}
+      </a>
+    );
+  }
+
   return (
-    <Link href="https://studioix.agency" className="cta">
-      <div className="text">
-        {text} <ArrowRight />
-      </div>
-    </Link>
+    <button className="flip-button">
+      {content}
+    </button>
   );
 };
 
-export default GlowButton;
+export default FlipButton;

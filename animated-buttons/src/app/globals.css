@@ -10,7 +10,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  text-align: center; 
+  text-align: center;
   color: #efeff1;
   border-radius: 8px;
   border: none;
@@ -191,3 +191,68 @@
 }
 
 /* Button Three Styles */
+
+/* Flip Button - 3D rotation effects */
+.flip-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  line-height: 1;
+  border-radius: 7rem;
+  padding: 0.815rem 1.232rem;
+  cursor: pointer;
+  border: none;
+  background: white;
+  transition: background 0.4s linear;
+  will-change: background;
+}
+
+.flip-button:hover {
+  background: #6fc1ff;
+}
+
+.flip-button:hover .flip-text-1 {
+  opacity: 0;
+  transform: rotateX(90deg) scaleX(0.9) translate3d(0, -10px, 0);
+}
+
+.flip-button:hover .flip-text-2 {
+  opacity: 1;
+  transform: rotateX(0deg) scaleX(1) translateZ(0);
+  transition: transform 0.75s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.35s linear 0.3s;
+}
+
+.flip-span {
+  position: relative;
+  display: block;
+  perspective: 108px;
+}
+
+.flip-span-2 {
+  position: absolute;
+}
+
+.flip-text {
+  font-style: normal;
+  display: inline-block;
+  font-size: 1.125rem;
+  color: black;
+  font-weight: 600;
+  will-change: transform, opacity, transition;
+  transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.35s linear 0.2s;
+}
+
+.flip-text-1 {
+  transform-origin: top;
+}
+
+.flip-text-2 {
+  opacity: 0;
+  transform: rotateX(-90deg) scaleX(0.9) translate3d(0, 10px, 0);
+  transform-origin: bottom;
+}
+
+/* Flip Button - 3D rotation effects */
