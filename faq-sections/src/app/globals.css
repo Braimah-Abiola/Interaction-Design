@@ -120,3 +120,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scrollbar */
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: none;
+}
+/* End Scrollbar */
